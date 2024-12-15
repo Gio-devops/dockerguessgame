@@ -4,7 +4,6 @@ services:
   backend:
     build: .
     restart: always #Restart em caso de falhas
-    container_name: guessgame-backend
     environment:
       - FLASK_APP=run.py
       - FLASK_DB_TYPE=postgres
@@ -23,7 +22,6 @@ services:
   frontend:
     build: ./frontend
     restart: always #Restart em caso de falhas
-    container_name: guessgame-frontend
     environment:
       - REACT_APP_BACKEND_URL=http://localhost:5000
     ports:
@@ -36,7 +34,6 @@ services:
   postgres:
     image: postgres:13 #Mudar versão em caso de atualização
     restart: always #Restart em caso de falhas
-    container_name: guessgame-db
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secretpass
@@ -49,7 +46,6 @@ services:
   nginx:
     image: nginx:1.25.0-alpine #Mudar versão em caso de atualização
     restart: always #Restart em caso de falhas
-    container_name: guessgame-nginx
     ports:
       - "80:80"
     volumes:
