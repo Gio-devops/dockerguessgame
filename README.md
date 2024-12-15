@@ -71,7 +71,7 @@ Essa configuração fornece um ambiente modular, escalável e de fácil manuten�
 Use o seguinte comando para construir e executar todos os serviços:
 
 ```bash
-docker-compose up --build -d
+docker compose up --build -d
 ```
 
 Isso irá:
