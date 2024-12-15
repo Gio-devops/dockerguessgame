@@ -4,8 +4,8 @@
 
 Este projeto implanta a aplicação **Guess Game** usando Docker Compose. A configuração inclui:
 
-1. Um **backend Flask** que fornece a API do jogo.
-2. Um **banco de dados Postgres** para persistir os dados do jogo.
+1. Um **backend Flask** que fornece a API do jogo;
+2. Um **banco de dados Postgres** para persistir os dados do jogo;
 3. Um **container NGINX** que atua como proxy reverso, balanceador de carga para o backend e hospeda o frontend React.
 
 Essa configuração fornece um ambiente modular, escalável e de fácil manutenção para implantar a aplicação Guess Game. Usando Docker Compose, os serviços podem ser gerenciados, atualizados e depurados de forma eficiente.
@@ -60,7 +60,7 @@ Essa configuração fornece um ambiente modular, escalável e de fácil manuten�
    git clone https://github.com/Gio-devops/dockerguessgame.git
    cd dockerguessgame
    ```
-3. Instale o `nvm` (Node Version Manager) para garantir compatibilidade com a versão necessária do Node.js. Se não tiver o nvm instalado, siga o [tutorial](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+3. Instale o `nvm` (Node Version Manager) para garantir compatibilidade com a versão necessária do Node.js. Se não tiver o nvm instalado, siga o [tutorial](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating).
 
 ---
 
