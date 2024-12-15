@@ -81,11 +81,11 @@ Isso irá:
 
 ### 2. Acessar a Aplicação
 
-- Abra o navegador e acesse `http://localhost:3000`.
+- Abra o navegador e acesse http://localhost:3000.
 
 ### 3. Variáveis de Ambiente
 
-Defina as variáveis de ambiente no arquivo `docker-compose.yml` para configurar os serviços. As principais variáveis incluem:
+Caso seja necessário, defina as variáveis de ambiente no arquivo `docker-compose.yml` para configurar os serviços. Alguns exemplos das principais variáveis incluem:
 
 - **Postgres:** `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`
 - **Backend:** `FLASK_ENV`, `FLASK_DB_*`
@@ -103,7 +103,7 @@ Para atualizar a aplicação backend:
    ```bash
    docker-compose build backend
    ```
-3. Reinicie o serviço do backend:
+3. Reinicie o serviço:
    ```bash
    docker-compose up -d backend
    ```
@@ -116,7 +116,9 @@ Para atualizar a aplicação frontend:
 2. Construa o app React:
    ```bash
    cd frontend
-   yarn build
+   yarn start (dev)
+   or
+   yarn build (prod)
    ```
 3. Copie o build para o container NGINX e reinicie-o:
    ```bash
