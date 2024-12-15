@@ -116,9 +116,9 @@ Para atualizar a aplicação frontend:
 2. Construa o app React:
    ```bash
    cd frontend
-   yarn start (dev)
+   yarn start #dev
    or
-   yarn build (prod)
+   yarn build #prod
    ```
 3. Copie o build para o container NGINX e reinicie-o:
    ```bash
