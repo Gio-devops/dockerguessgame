@@ -4,6 +4,7 @@ services:
   backend:
     build: .
     restart: always #Restart em caso de falhas
+    container_name: dockerguessgame-backend
     environment:
       - FLASK_APP=run.py
       - FLASK_DB_TYPE=postgres
@@ -21,6 +22,7 @@ services:
 
   frontend:
     build: ./frontend
+    container_name: dockerguessgame-frontend
     restart: always #Restart em caso de falhas
     environment:
       - REACT_APP_BACKEND_URL=http://localhost:5000
@@ -33,6 +35,7 @@ services:
 
   postgres:
     image: postgres:13 #Mudar versão em caso de atualização
+    container_name: dockerguessgame-db
     restart: always #Restart em caso de falhas
     environment:
       POSTGRES_USER: postgres
@@ -45,6 +48,7 @@ services:
 
   nginx:
     image: nginx:1.25.0-alpine #Mudar versão em caso de atualização
+    container_name: dockerguessgame-nginx
     restart: always #Restart em caso de falhas
     ports:
       - "80:80"

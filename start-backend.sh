@@ -6,7 +6,7 @@ export FLASK_DB_TYPE="postgres"
 export FLASK_DB_USER="postgres"
 export FLASK_DB_NAME="postgres"
 export FLASK_DB_PASSWORD="secretpass"
-export FLASK_DB_HOST="guessgame-db"
+export FLASK_DB_HOST="dockerguessgame-db"
 export FLASK_DB_PORT="5432"
 
 # Run app.py when the container launches
